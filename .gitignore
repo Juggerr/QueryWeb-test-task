@@ -2,3 +2,4 @@ node_modules
 db.*
 .idea
 webpack-stats.json
+__pycache__/
