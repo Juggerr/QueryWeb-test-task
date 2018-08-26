@@ -3,7 +3,7 @@
 Deployment steps:
 * Clone the repository and enter to the project directory
 ```bash
-https://github.com/Juggerr/QueryWeb-test-task.git && cd QueryWeb-test-task
+git clone https://github.com/Juggerr/QueryWeb-test-task.git && cd QueryWeb-test-task
 ```
 * [Optional] Create new python virtual environment and activate it
 ```bash
