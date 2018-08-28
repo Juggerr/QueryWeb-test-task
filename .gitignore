@@ -3,3 +3,4 @@ db.*
 .idea
 webpack-stats.json
 __pycache__/
+assets
