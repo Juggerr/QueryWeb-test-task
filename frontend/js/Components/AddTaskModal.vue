@@ -1,5 +1,5 @@
 <template>
-  <b-modal id="add-modal" title="Add task" @ok="handleOk" @cancel="clearForm">
+  <b-modal id="add-modal" title="Add task" @ok="handleOk" @cancel="clearForm" :ok-disabled="!name.length">
       <b-form-group>
         <b-form-input id="name"
                       type="text"
