@@ -47,7 +47,7 @@ export default new Vuex.Store({
                    'Accept': 'application/json',
                    'Content-Type': 'application/json'
                },
-               body: JSON.stringify({status: statusChange.status})
+               body: JSON.stringify(statusChange)
            }).then((response) => {
                dispatch('fetchTasks');
            });

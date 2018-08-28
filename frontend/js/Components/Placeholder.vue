@@ -59,9 +59,9 @@
             this.$store.dispatch('fetchTasks');
         },
         methods: {
-          updateTask(task) {
-              this.$store.dispatch('updateTask', task);
-          },
+            updateTask(task) {
+                this.$store.dispatch('updateTask', task);
+            },
         },
         computed: mapGetters(['doneTasks', 'todoTasks']),
         data() {
@@ -74,14 +74,10 @@
                     multipleDropzonesItemsDraggingEnabled: false,
                     showDropzoneAreas: true,
                     onDrop: function(event) {
-                    },
-                    onDragstart: function(event) {
-                    },
-                    onDragend: function(event) {
                         const id = event.items[0].dataset.id;
                         const status = event.droptarget.dataset.status;
                         store.dispatch('updateTask', {id, status});
-                    }
+                    },
                 }
             }
         }
